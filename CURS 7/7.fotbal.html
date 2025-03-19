@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* view height - 100 : inaltimea ecranului */
+            width: 100vw; /* view width */
+            background-color: antiquewhite;
+        }
+
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* view height */
+            width: 80vw; /* view width */
+            position: relative;
+        }
+
+        main::after {
+            content: '';
+            position: absolute;
+            height: 80vh; /* view height */
+            width: 80vw; /* view width */
+            top: 0;
+            background-color: green;
+            background-image: url('https://static.flashscore.com/res/_fs/build/symbols.a15cd79.svg#soccerFieldView');
+            background-size: contain;
+            z-index: -1;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            width: 50%;
+        }
+    
+        /* #romania {
+            background-color: yellow;
+        } */
+
+        #argentina {
+            /* background-color: aqua; */
+            flex-direction: row-reverse;
+        }
+
+        .linie {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* background-color: crimson; */
+            margin: 3px;
+            height: 100%;
+        }
+
+        .numejucator {
+            background-color: black;
+            color: white;
+        }
+
+        /* pseudo clase */
+        .jucator:hover {
+            transform: scale(1.2) rotate(3deg);
+        }
+
+        @media screen and (max-width:992px) {
+            main, section {
+                flex-direction: column;
+            }
+            .linie {
+                flex-direction: row-reverse;
+            }
+            #argentina {
+                flex-direction: column-reverse;
+            }
+            .linie {
+                height: 50px;
+                width: 50px;
+            }
+            .linie .numejucator {
+                font-size: 9px;
+            }
+            main::after {
+                transform: rotate(90deg);
+            }
+            main::after {
+                height: 100vw;
+                width: 100vh;
+            }
+            main {
+                height: 100vh;
+                width: 100vw;
+            }
+            section {
+                width: 100%;
+            }
+            /* main {
+                transform: rotate(90deg);
+            }
+            .jucator {
+                transform: rotate(-90deg);
+            } */
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="romania">  
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/zH6PuD0r-rmkgmAdj.png" alt="">
+                    <div class="numejucator">
+                        1. Prunea
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/QLuDyEMg-SlvXJFL8.png" alt="">
+                    <div class="numejucator">
+                        14. Mihali
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/M9MxDiTR-EuLETeEg.png" alt="">
+                    <div class="numejucator">
+                        4. Belodedici
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/hdRPnq2r-lbuTKe62.png" alt="">
+                    <div class="numejucator">
+                        3. Prodan
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/vD7pMJ4G-lbuTKe62.png" alt="">
+                    <div class="numejucator">
+                        13. Selimes
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/lvqJfJsl-GbxyyvMJ.png" alt="">
+                    <div class="numejucator">
+                        5. Lupescu
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/hdRPnq2r-lbuTKe62.png" alt="">
+                    <div class="numejucator">
+                        6. Popescu
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/2eKfUSr5-bD0R8zeH.png" alt="">
+                    <div class="numejucator">
+                        2. Petrescu
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/tbBqA5tl-bZa0VSHL.png" alt="">
+                    <div class="numejucator">
+                        10. Hagi
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/2sePK40r-4S8nh0Lr.png" alt="">
+                    <div class="numejucator">
+                        7. Munteanu
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/Ukb9IY2a-2DZEhJSj.png" alt="">
+                    <div class="numejucator">
+                        11. Dumitrescu
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="argentina">
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/nFMtWWsl-MNPCDnRe.png" alt="">
+                    <div class="numejucator">
+                        12. Islas
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/niMogH1r-SYRAW8pq.png" alt="">
+                    <div class="numejucator">
+                        13. Caceres
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/p0ywOe4G-E1ObHUlO.png" alt="">
+                    <div class="numejucator">
+                        4. Sensini
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/2JtEgVNg-GIhw6n63.png" alt="">
+                    <div class="numejucator">
+                        6. Ruggeri
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/vBOOuRNA-QPcsZXV0.png" alt="">
+                    <div class="numejucator">
+                        3. Chamot
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/vkwZOb3a-OU8zxkMa.png" alt="">
+                    <div class="numejucator">
+                        8. Basualdo
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/0rlJwNq5-SYRAW8pq.png" alt="">
+                    <div class="numejucator">
+                        5. Redondo
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/dO1l4Gul-zq5QFuUc.png" alt="">
+                    <div class="numejucator">
+                        14. Simeone
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/hW1oRUNg-8r0Zzf1l.png" alt="">
+                    <div class="numejucator">
+                        17. Ortega
+                    </div>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/pMbwid3a-8YnrprwF.png" alt="">
+                    <div class="numejucator">
+                        19. Balbo
+                    </div>
+                </div>
+                <div class="jucator">
+                    <img src="https://static.flashscore.com/res/image/data/AgJsommM-QPcsZXV0.png" alt="">
+                    <div class="numejucator">
+                        9. Batistuta
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

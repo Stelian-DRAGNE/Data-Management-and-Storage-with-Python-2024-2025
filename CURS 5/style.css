@@ -1,0 +1,26 @@
+/* .apa {
+    color: aquamarine;
+    background-color: aquamarine;
+}
+
+li {
+    color: aqua;
+}
+
+li {
+    color: burlywood;
+}
+
+#litera {
+    color: darkblue;
+}
+
+
+ol li {
+    padding: 100px;
+} */
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}

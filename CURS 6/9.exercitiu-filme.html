@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parinte {
+            border-style: solid;
+            border-color: blue;
+            border-width: 4px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh; 
+        }
+        .copil {
+            /* background-color: bisque; */
+            /* vh - view heigh */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position:relative;
+            border-style: double;
+        }
+        .copil img {
+            /* Procentaj din parinte - cat parintele de mare */
+            height: 100%; 
+            width: 90%;
+            /* width: 100%; */
+            object-fit: cover;
+            /* object-fit: contain; */
+            border-style: dashed;
+            border-color: blue;
+            border-width: 2px;
+        }
+        .copil p {
+            background-color: white;
+            margin: 0px;
+            margin-top: -20px;
+        }
+        #cerc {
+            background-color: red;
+            position:absolute;
+            right: calc(10px +  5%);
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="parinte">
+        <div class="copil">
+            <div id="cerc"></div>
+            <img src="https://api.kissfm.ro/resized/articole/2021/09/17/la_et_mn_tiff_movies_02_5d9f1dc655478_700.jpg?w=1280&h=&c=" alt="">
+            <p>Joker</p>
+        </div>
+        <div class="copil">
+            <img src="https://api.kissfm.ro/resized/articole/2021/09/17/la_et_mn_tiff_movies_02_5d9f1dc655478_700.jpg?w=1280&h=&c=" alt="">
+            <p>Django</p>
+        </div>
+        <div class="copil">
+            <img src="https://api.kissfm.ro/resized/articole/2021/09/17/la_et_mn_tiff_movies_02_5d9f1dc655478_700.jpg?w=1280&h=&c=" alt="">
+            <p>Joker</p>
+        </div>
+        <div class="copil"> 
+            <img src="https://api.kissfm.ro/resized/articole/2021/09/17/la_et_mn_tiff_movies_02_5d9f1dc655478_700.jpg?w=1280&h=&c=" alt="">
+            <p>Leonardo</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
